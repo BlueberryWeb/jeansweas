@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url("fonts/Montserrat-Black.ttf"); 
+}
+@font-face {
+    font-family: 'Montserrat Bold';
+    src: url("fonts/Montserrat-Bold.ttf"); 
+}
+@font-face {
+    font-family: 'Montserrat ExtraBold';
+    src: url("fonts/Montserrat-ExtraBoldItalic.ttf"); 
+}
+@font-face {
+    font-family: 'Montserrat Medium';
+    src: url("fonts/Montserrat-Medium.ttf"); 
+}
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url("fonts/Montserrat-Regular.ttf"); 
+}
+@font-face {
+    font-family: 'Montserrat SemiBold';
+    src: url("fonts/Montserrat-SemiBold.ttf"); 
+}
+@font-face {
+    font-family: 'WorkSans ExtraBold';
+    src: url("fonts/WorkSans-ExtraBold.ttf"); 
+}
+.black{
+    font-family: 'Montserrat Black';
+}
+.bold{
+    font-family: 'Montserrat Bold';
+}
+.ExtraBold{
+    font-family: 'Montserrat ExtraBold';
+}
+.Medium{
+    font-family: 'Montserrat Medium';
+}
+.Regular{
+    font-family: 'Montserrat Regular';
+}
+.SemiBold{
+    font-family: 'Montserrat SemiBold';
+}
+.Work{
+    font-family: 'WorkSans ExtraBold';
+}
+/*BOTONES*/
+.btn-conoce{
+    background-color: #54A1F8;
+    border-color: #54A1F8;
+    border-radius: 0;
+    width: 180px;
+}
+.btn-carrito{
+    background-color: #54A1F8;
+    border-color: #54A1F8;
+    border-radius: 0;
+}
+.inner-addon {
+    position: relative;
+}
+.right-addon .glyphicon {
+    right: 0px;
+}
+.inner-addon .glyphicon {
+    position: absolute;
+    padding: 10px;
+    pointer-events: none;
+}
+.right-addon input{
+  padding-right:  30px; 
+  border-radius: 5px;
+}
+.borde{
+    border-right: 1px solid #000000;
+}
+.vid-monitoreo{
+    position: relative;
+    margin-bottom: 150px;
+}
+.video_index{
+    position: absolute;
+}
+.txt-index{
+    position: relative;
+    color: #fff;
+}
+/*HOVER NOVEDADES*/
+.novedad{
+    position: relative;
+}
+.hover{
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.ver{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin-top: 160px;
+}
+.fav{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+}
+.fav img{
+    width: 20px;
+}
