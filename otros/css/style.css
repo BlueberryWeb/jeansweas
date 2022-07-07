@@ -26,6 +26,10 @@
     font-family: 'WorkSans ExtraBold';
     src: url("fonts/WorkSans-ExtraBold.ttf"); 
 }
+@font-face {
+    font-family: 'WorkSans Bold';
+    src: url("fonts/WorkSans-Bold.ttf"); 
+}
 .black{
     font-family: 'Montserrat Black';
 }
@@ -47,6 +51,12 @@
 .Work{
     font-family: 'WorkSans ExtraBold';
 }
+.WorkB{
+    font-family: 'WorkSans Bold';
+}
+.a_none_style{
+    text-decoration: none;
+}
 /*BOTONES*/
 .btn-conoce{
     background-color: #54A1F8;
@@ -59,6 +69,78 @@
     border-color: #54A1F8;
     border-radius: 0;
 }
+.nav-pills .nav-link.active, .nav-pills .show> .nav-link{
+    background: transparent;
+    color: #54B3F8;
+}
+.btn-novedades{
+    color: #AAAAAA;
+}
+.btn-novedades:hover{
+    color: #54B3F8;
+}
+/*NOVEDADES TITULO*/
+:active, :hover, :focus {
+    outline: 0!important;
+    outline-offset: 0;
+}
+::before,
+::after {
+    position: absolute;
+    content: "";
+}
+.btn-hover {
+    position: relative;
+    display: inline-block;
+    width: auto; 
+    height: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.btn-hover span {         
+    position: relative;
+    display: inline-block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    transition: 0.3s;
+}
+.btn-3 {
+    padding: 5px;
+}
+.btn-3 span {
+    color: rgb(54, 56, 55);
+    background-color: transparent;
+}
+.btn-3::before,
+.btn-3::after {
+    background: transparent;
+    z-index: 2;
+}
+.btn-hover.hover-border-2::before,
+.btn-hover.hover-border-2::after {
+  width: 10%; height: 25%;
+  transition: 0.35s;
+}
+.btn-hover.hover-border-2::before {
+  bottom: 0; left: 0;
+  border-left: 2px solid rgb(77, 135, 182);
+  border-bottom: 2px solid rgb(77, 135, 182);
+}
+.btn-hover.hover-border-2::after {
+  top: 0; right: 0;
+  border-right: 2px solid rgb(77, 135, 182);
+  border-top: 2px solid rgb(77, 135, 182);
+}
+.btn-hover.hover-border-2:hover::before,
+.btn-hover.hover-border-2:hover::after {
+  width: 99%;
+  height: 99%;
+}
+/*TERMINA BOTONES*/
 .inner-addon {
     position: relative;
 }
@@ -88,24 +170,35 @@
     position: relative;
     color: #fff;
 }
+.txt-azul-precio{
+    color: #4D87B6;
+}
+.txt-gris-precio{
+    color: #AAAAAA;
+}
 /*HOVER NOVEDADES*/
 .novedad{
     position: relative;
 }
+.novedad:hover .hover{
+    opacity: 1;
+}
 .hover{
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.5);
     padding: 10px;
     position: absolute;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
+    opacity: 0;
+    cursor: pointer;
 }
 .ver{
     background: #fff;
     width: 50px;
     height: 50px;
-    margin-top: 160px;
+    margin-top: 175px;
 }
 .fav{
     background: #fff;
@@ -114,4 +207,55 @@
 }
 .fav img{
     width: 20px;
+}
+.adquiere{
+    position: relative;
+    display: inline-block;
+}
+.txt-adquiere{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 300px;
+}
+.txt-adquiere h1{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);;
+}
+.categoria:hover .texto-hover{
+    opacity: 1;
+}
+.categoria{
+    position: relative;
+    display: inline-block;
+    color: #fff;
+}
+.tit-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+}
+.texto-hover{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.texto-hover h6{
+    margin-top: 6rem;
+    font-size: 12px;
+
+}
+.texto-hover h5{
+    margin-top: 7rem;
+    font-size: 12px;
 }
