@@ -23,12 +23,24 @@
     src: url("fonts/Montserrat-SemiBold.ttf"); 
 }
 @font-face {
+    font-family: 'Montserrat Light';
+    src: url("fonts/Montserrat-Light.ttf"); 
+}
+@font-face {
     font-family: 'WorkSans ExtraBold';
     src: url("fonts/WorkSans-ExtraBold.ttf"); 
 }
 @font-face {
     font-family: 'WorkSans Bold';
     src: url("fonts/WorkSans-Bold.ttf"); 
+}
+@font-face {
+    font-family: 'WorkSans Light';
+    src: url("fonts/WorkSans-Light.ttf"); 
+}
+html, body {
+    width: 100% !important;
+    overflow-x: hidden;
 }
 .black{
     font-family: 'Montserrat Black';
@@ -42,6 +54,9 @@
 .Medium{
     font-family: 'Montserrat Medium';
 }
+.Light{
+    font-family: 'Montserrat Light';
+}
 .Regular{
     font-family: 'Montserrat Regular';
 }
@@ -53,6 +68,9 @@
 }
 .WorkB{
     font-family: 'WorkSans Bold';
+}
+.WorkL{
+    font-family: 'WorkSans Light';
 }
 .a_none_style{
     text-decoration: none;
@@ -78,6 +96,12 @@
 }
 .btn-novedades:hover{
     color: #54B3F8;
+}
+.btn-transparente{
+    background: none;
+    border-color: #5398E6;
+    border-radius: 0;
+    width: 180px;
 }
 /*NOVEDADES TITULO*/
 :active, :hover, :focus {
@@ -176,6 +200,9 @@
 .txt-gris-precio{
     color: #AAAAAA;
 }
+.txt-verde{
+    color: #82C667;
+}
 /*HOVER NOVEDADES*/
 .novedad{
     position: relative;
@@ -208,6 +235,11 @@
 .fav img{
     width: 20px;
 }
+.producto img{
+    width: 100%;
+    height: 100%;
+}
+/*TERMINA HOVER NOVEDADES*/
 .adquiere{
     position: relative;
     display: inline-block;
@@ -221,7 +253,19 @@
     width: 300px;
 }
 .txt-adquiere h1{
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.txt-sombra1{
+    text-shadow: 5px -5px rgba(0, 0, 0, 0.5);
+}
+.txt-sombra2{
+    text-shadow: 5px -5px rgba(0, 0, 0, 0.5);
+}
+.txt-sombra3{
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+.txt-sombra4{
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 .categoria:hover .texto-hover{
     opacity: 1;
@@ -258,4 +302,87 @@
 .texto-hover h5{
     margin-top: 7rem;
     font-size: 12px;
+}
+.bordes{
+    border-style: solid;
+    border-color: #5398E6;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+    width: 25%;
+}
+.box-border{
+    border-style: solid;
+    border-color: #000000;
+}
+.bordes p{
+    color: #999999;
+    font-size: 12px;
+}
+.tendencias{
+    position: relative;
+}
+.relleno{
+    background-color: #303030;
+    color: #fff;
+    position: absolute;
+    top: 65%;
+    left: 30%;
+    width: 36%;
+    text-align: center;
+    line-height: 50%;
+}
+.relleno p{
+    font-size: 12px;
+}
+.relleno h6{
+    font-size: 14px;
+}
+.tendencias-mujer{
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+}
+.imagen{
+    margin-left: 2rem;
+}
+.bg-emprende{
+    background-image: url('../img/bg-emprende.jpeg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.bg-index{
+    background-image: url('../img/bg-emprende.jpeg');
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.icono-define{
+    float: left;
+}
+.define{
+    line-height: 50%;
+}
+.define p{
+    font-size: 12px;
+}
+.borde-izquierdo{
+    border-left: 1px solid #5398E6;
+}
+.vid-contact{
+    max-width: 100%;
+    padding: 0px 0px 0px 0px;
+    z-index: 0;
+}
+.menu-categoria li{
+    list-style: none;
+}
+.menu-categoria h6{
+    font-size: 15px;
 }
