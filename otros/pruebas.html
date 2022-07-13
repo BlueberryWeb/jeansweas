@@ -10,6 +10,120 @@
     <title>JEANWEST</title>
 </head>
 <body>
+    <style>
+        .animation {
+            background-image: linear-gradient(to top, #FFAA00 0%, #FF0058 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .paper-plane {
+            position: absolute;
+            width: 2.5rem;
+            left: 48.4%;
+            z-index: 1;
+            top: 0;
+        }
+        .linea-animacion{
+            position: absolute;
+            right: 50%;
+            z-index: 0;
+            top: 0;
+
+        }
+   </style>
+   <img src="img/cierre.png" alt="">
+    <!--HEADER COMPUTADORA-->
+     <!--BOTÓN FLOTANTE-->
+     <a href="#" class="btn-flotante"><img src="img/barra.png" alt="" class="img-fluid"/></a>
+     <section class="animation">
+        <!--POR QUÉ INICIAR TU NEGOCIO CON JEANWEST-->
+        <div class="container pt-5 iniciar-negocio">
+        <!--GANANCIAS-->
+        <div class="row pt-5">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div class="row box-ganancias">
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-5">
+                        <img src="img/ganancias.png" alt="Ganancias de hasta un 40%" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 pt-3">
+                        <div class="ganancias">
+                            <h1 class="Light mb-0">Ganancias</h1>
+                            <h1 class="ExtraBold mt-0">de hasta un</h1>
+                            <img src="img/40.png" alt="40%" class="img-fluid ganancias-desc"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+        <!--PRODUCTOS-->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12"></div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-12 col-sm-12 m-0">
+                        <div class="facil-vender">
+                            <h1 class="Light">Productos</h1>
+                            <h1 class="ExtraBold">fácil de</h1>
+                            <h1 class="ExtraBold">vender</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12 m-0">
+                        <img src="img/facil-vender.png" alt="Productos fácil de vender" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--DISEÑOS-->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                        <img src="img/diseno-constante.png" alt="Actualización constante de diseños" class="img-fluid"/>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                        <div class="disenos">
+                            <h1 class="Light">Actualización</h1>
+                            <h1 class="Light">constante de</h1>
+                            <h1 class="ExtraBold">diseños</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12"></div>
+        </div>
+        <!--ASESORIAS-->
+        <div class="row">
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12"></div>
+            <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-12 col-sm-12 p-0">
+                        <div class="asesoria">
+                            <h1 class="Light">Asesoría</h1>
+                            <h1 class="ExtraBold">online</h1>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-12 col-sm-12">
+                        <img src="img/asesoria.png" alt="Asesoría online" class="img-fluid"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--GIF DEL DINERO-->
+        <div class="row">
+            <div class="text-center">
+                <img src="img/dinero.png" alt="JEANWEST" class="img-fluid"/>
+            </div>
+        </div>
+        </div>
+       <img src="img/cierre.png" class="paper-plane" alt="Blue paper plane" id="item"/>
+       <img src="img/linea-cierre.png" alt="" class="img-fluid linea-animacion"/>
+       <!-- Paper plane image from pngtree.com -->
+   </section>
+
+
+
+
     
 
 
@@ -18,5 +132,68 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/BezierPlugin.min.js"></script>
+    <script>
+
+        const flightPath = {
+        curviness: 0,
+        autoRotate: false,
+        values: [
+            {
+                x: (window.innerHeight/8), y: 150
+            },
+            {
+                x: (window.innerHeight/8)*2, y: 200
+            },
+            {
+                x: (window.innerHeight/8)*4, y: 182
+            },
+            {
+                x: (window.innerHeight/8)*6, y: 180
+            },
+            {
+                x: (window.innerHeight/8)*7.6, y: 100
+            },
+            {
+                x: (window.innerHeight/8)*9, y: 140
+            },
+            {
+                x: (window.innerHeight/8)*11, y: 130
+            },
+            {
+                x: window.innerHeight +400 , y: 500
+            }
+
+        ]
+        }
+
+        const tween = new TimelineLite()
+
+        tween.add(
+        TweenLite.to('.paper-plane' , 3, {
+            bezier: flightPath,
+            ease: Power1.easeInOut
+        })
+        )
+
+        const controller = new ScrollMagic.Controller()
+        const scene = new ScrollMagic.Scene({
+        triggerElement: '.animation',
+        duration: 1500,
+        triggerHook: 0
+        })
+
+        .setTween(tween)
+        .setPin('.animation')
+        .addTo(controller)
+
+    </script>
 </body>
 </html>

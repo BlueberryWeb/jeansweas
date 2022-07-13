@@ -42,6 +42,9 @@ html, body {
     width: 100% !important;
     overflow-x: hidden;
 }
+.logo-header{
+    width: 200px;
+}
 .black{
     font-family: 'Montserrat Black';
 }
@@ -86,6 +89,9 @@ html, body {
     background-color: #54A1F8;
     border-color: #54A1F8;
     border-radius: 0;
+}
+.btn-carrito h6{
+    font-size: 10px;
 }
 .nav-pills .nav-link.active, .nav-pills .show> .nav-link{
     background: transparent;
@@ -181,8 +187,20 @@ html, body {
     border-color: #EEEEEE;
     border-radius: 0;
     color: #000000;
-    width: 100px;
+    width: 80px;
 }
+/*BOTÓN QUE SIEMPRE ESTÁ AL LADO*/
+.btn-flotante {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+  }
+.btn-flotante:hover {
+  transform: translateY(-7px);
+}
+/*TERMINA BOTÓN*/
 /*TERMINA BOTONES*/
 .inner-addon {
     position: relative;
@@ -204,10 +222,14 @@ html, body {
 }
 .vid-monitoreo{
     position: relative;
+    margin-top: 120px;
     margin-bottom: 150px;
 }
 .video_index{
     position: absolute;
+}
+.menu-web{
+    background-color: #fff;
 }
 .txt-index{
     position: relative;
@@ -247,7 +269,13 @@ html, body {
     background: #fff;
     width: 50px;
     height: 50px;
-    margin-top: 175px;
+    margin-top: 130px;
+}
+.ver-tienda{
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    margin-top: 170px;
 }
 .fav{
     background: #fff;
@@ -342,6 +370,7 @@ html, body {
 .box-border{
     border-style: solid;
     border-color: #000000;
+    height: 150px;
 }
 .bordes p{
     color: #999999;
@@ -399,6 +428,7 @@ html, body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    margin-top: 120px;
 }
 .bg-ingresos{
     background-image: url('../img/bg-generar-ingresos.png');
@@ -522,10 +552,77 @@ html, body {
 .filtro-web{
     border: 2px solid #5398E6;
 }
+.filtro-web h6{
+    font-size: 12px;
+}
 .border-bottom{
-    border-bottom: 2px solid #707070!important;
+    border-bottom: 4px solid #DEDEDE!important;
 }
 .box-filtro{
     float: left;
     margin-right: 30px;
+}
+.paginacion{
+    border-radius: 0;
+}
+.page-link{
+    border: 1.5px solid #DEDEDE;
+    border-radius: 0;
+    color: #000000;
+    margin-right: 5px;
+    font-family: 'Montserrat Regular';
+}
+.page-item.active .page-link{
+    border: 1.5px solid #5398E6;
+    background: transparent;
+    border-radius: 0;
+    color: #000000;
+}
+.fa-angle-right{
+    color: #707070;
+    font-size: 1.4rem;
+}
+.hr-tienda{
+    border: 2px solid #DEDEDE;
+}
+/*COLLAPSE DE CATEGORIAS*/
+.collapsible {
+    background: none;
+    color: #000000;
+    cursor: pointer;
+    width: 100%;
+    border-top-color: #fff;
+    border-bottom: 2px solid #DEDEDE!important;
+    border-left: none;
+    border-right: none;
+    text-align: left;
+    outline: none;
+    padding-bottom: 1rem;
+}
+.collapsible h5{
+    font-size: 15px;
+}
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    border-bottom: 2px solid #DEDEDE!important;
+    transition: max-height 0.2s ease-out;
+    background: none;
+  }
+  .content h5{
+      margin-top: 10px;
+  }
+/*TERMINA COLLAPSE DE CATEGORIAS*/
+.icono-pago{
+    width: 32px;
+}
+.tienda{
+    margin-top: 100px;
+}
+.nombre-producto h5{
+    font-size: 15px;
+}
+.nombre-producto h6{
+    font-size: 14px;
 }
