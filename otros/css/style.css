@@ -192,7 +192,7 @@ html, body {
 /*BOTÓN QUE SIEMPRE ESTÁ AL LADO*/
 .btn-flotante {
     position: fixed;
-    bottom: 40px;
+    top: 0;
     right: 40px;
     transition: all 300ms ease 0ms;
     z-index: 99;
@@ -201,6 +201,18 @@ html, body {
   transform: translateY(-7px);
 }
 /*TERMINA BOTÓN*/
+.btn-enviar{
+    background-color: #54A1F8;
+    border-color: #54A1F8;
+    border-radius: 0;
+    width: 200px;
+}
+.btn-guia{
+    background-color: #5398E6;
+    border-color: #5398E6;
+    border-radius: 0;
+    width: 200px;
+}
 /*TERMINA BOTONES*/
 .inner-addon {
     position: relative;
@@ -246,6 +258,9 @@ html, body {
 }
 .txt-azul{
     color: #5398E6;
+}
+.txt-normal{
+    color: #6A6A6A;
 }
 /*HOVER NOVEDADES*/
 .novedad{
@@ -322,6 +337,9 @@ html, body {
 }
 .txt-tipos{
     line-height: normal;
+}
+.bg-contacto h1{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
 .categoria:hover .texto-hover{
     opacity: 1;
@@ -441,6 +459,26 @@ html, body {
 }
 .bg-gris{
     background-color: #F4F4F4;
+}
+
+.bg-gris-formulario{
+    background-color: #F8F8F8;
+}
+.bg-contacto{
+    background-image: url('../img/bg-contacto.png');
+    width: 100%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    margin-top: 110px;
+}
+.bg-detalle{
+    margin-top: 150px;
+}
+.bg-carrito{
+    margin-top: 110px;
 }
 .icono-define{
     float: left;
@@ -624,5 +662,44 @@ html, body {
     font-size: 15px;
 }
 .nombre-producto h6{
+    font-size: 14px;
+}
+.formulario{
+    border-radius: 30px;
+    font-family: 'Montserrat Regular';
+    color: #6A6A6A;
+}
+.formulario input{
+    border: none;
+    border-radius: 10px;
+}
+.formulario textarea{
+    border: none;
+    border-radius: 10px;
+}
+.telefono-contacto{
+    float: left;
+    margin-top: 20px;
+    margin-right: 1rem;
+    margin-bottom: 15px;
+}
+.ubicacion-contacto{
+    float: left;
+    margin-right: 1rem;
+    margin-top: 10px;
+}
+.icono-contacto{
+    width: 28px;
+}
+.iconos-siguenos{
+    width: 22px;
+}
+.icono-fb{
+    width: 14px;
+}
+.breadcrumb-item a{
+    color: #3B3B3B;
+}
+.btn-guia h6{
     font-size: 14px;
 }
