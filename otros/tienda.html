@@ -14,8 +14,8 @@
 
     <!--HEADER CELULAR-->
     <!--HEADER COMPUTADORA-->
-    <header class="menu-web fixed-top">
-        <div class="">
+    <header>
+        <div class="menu-web fixed-top"">
             <nav class="navbar navbar-expand-lg navbar-ligh">
                 <div class="container">
                     <a class="navbar-brand" href="index.html"><img src="img/jeanswest-logo-azul.png" alt="JEANWEST" class="img-fluid logo-header"/></a>
@@ -28,7 +28,7 @@
                                 <a class="nav-link Medium" href="negocio.html">TU NEGOCIO</a>
                             </li>
                             <li class="nav-item me-4">
-                                <a class="nav-link me-0 Medium" href="#">CONTACTO</a>
+                                <a class="nav-link me-0 Medium" href="contacto.html">CONTACTO</a>
                             </li>
                             <li class="nav-item me-4">
                                 <div class="inner-addon right-addon form-group">
@@ -36,13 +36,13 @@
                                     <input class="form-control" name="Buscar" placeholder="Buscar">
                                   </div>
                             </li>
-                            <li class="nav-item borde me-3">
+                            <li class="nav-item borde me-2">
                                 <img src="img/icono-login.png" alt="JEANWEST" class="img-fluid me-4 mt-1"/>
                             </li>
-                            <li class="nav-item borde me-3">
+                            <li class="nav-item borde me-2 ms-2">
                                <img src="img/icono-fav.png" alt="JEANWEST" class="img-fluid me-4 mt-1"/>
                             </li>
-                            <li class="nav-item ms-3">
+                            <li class="nav-item ms-2">
                                 <img src="img/icono-carrito.png" alt="JEANWEST" class="img-fluid mt-1"/>
                              </li>
                         </ul>
@@ -74,7 +74,7 @@
                                         <a class="nav-link">TENDENCIAS</a>
                                       </li>
                                       <li class="nav-item">
-                                        <a class="nav-link">CATÁLOGOS</a>
+                                        <a class="nav-link" href="tienda.html">CATÁLOGOS</a>
                                       </li>
                                     </ul>
                                   </div>
@@ -155,7 +155,21 @@
                     </div>
                     <div class="col-12 col-sm-12 col-md-12 col-lg-9">
                         <div class="row">
-                            <h6 class="Medium pb-3">1-9 de 300 RESULTADOS</h6>
+                            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+                                <h6 class="Medium pb-3">1-9 de 300 RESULTADOS</h6>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12"></div>
+                            <div class="col-12 col-lg-2 col-sm-12 col-md-12">
+                                <div class="ordenar">
+                                    <select class="form-select px-3 py-2" aria-label="Default select example">
+                                        <option selected >Ordernar por</option>
+                                        <option value="1">Precio: De menor a mayor</option>
+                                        <option value="2">Precio de mayor a menor</option>
+                                        <option value="3">Más reciente</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
                             <hr class="hr-tienda mb-5">
                         </div>
                         <div class="row">
@@ -178,8 +192,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -210,8 +224,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -242,8 +256,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -252,7 +266,7 @@
                                 </div>
                                 <div class="nombre-producto">
                                     <h5 class="Regular">Pantalón Verde 1156</h5>
-                                    <h6 class="Regular txt-azul-precio">$79.99 <b class="txt-gris-precio">$120.00</b></h6>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
                                 </div>
                             </div>
                         </div>
@@ -276,8 +290,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -308,8 +322,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -340,8 +354,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -350,7 +364,7 @@
                                 </div>
                                 <div class="nombre-producto">
                                     <h5 class="Regular">Pantalón Verde 1156</h5>
-                                    <h6 class="Regular txt-azul-precio">$79.99 <b class="txt-gris-precio">$120.00</b></h6>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
                                 </div>
                             </div>
                         </div>
@@ -374,8 +388,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -406,8 +420,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -438,8 +452,8 @@
                                         </div>
                                         <div class="text-start pt-3">
                                             <button class="btn btn-primary btn-carrito">
-                                                <h6 class="pt-1 SemiBold">
-                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid"/>
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                     AGREGAR AL CARRITO
                                                 </h6>
                                             </button>
@@ -448,7 +462,7 @@
                                 </div>
                                 <div class="nombre-producto">
                                     <h5 class="Regular">Pantalón Verde 1156</h5>
-                                    <h6 class="Regular txt-azul-precio">$79.99 <b class="txt-gris-precio">$120.00</b></h6>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
                                 </div>
                             </div>
                         </div>
