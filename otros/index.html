@@ -10,6 +10,9 @@
     <title>JEANWEST</title>
 </head>
 <body>
+     <!--BOTÓN DE WHATSAPP-->
+     <a href="#" class="btn-flotante-whats"><i class="fa-brands fa-whatsapp"></i></a>
+    <!--TERMOMETRO-->
     <a href="#" class="btn-flotante"><img src="img/termometro.png" alt="JEANWEST" class="img-fluid"/></a>
 
     <!--HEADER CELULAR-->
@@ -18,7 +21,7 @@
         <div class="menu-web fixed-top"">
             <nav class="navbar navbar-expand-lg navbar-ligh">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="img/jeanswest-logo-azul.png" alt="JEANWEST" class="img-fluid logo-header"/></a>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid logo-header"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -32,18 +35,18 @@
                             </li>
                             <li class="nav-item me-4">
                                 <div class="inner-addon right-addon form-group">
-                                    <img src="img/icono-search.png" alt="" class="glyphicon ">
+                                    <img src="img/icono-Busqueda.gif" alt="" class="glyphicon "/>
                                     <input class="form-control" name="Buscar" placeholder="Buscar">
                                   </div>
                             </li>
                             <li class="nav-item borde me-2">
-                                <img src="img/icono-login.png" alt="JEANWEST" class="img-fluid me-4 mt-1"/>
+                                <img src="img/icono-mi_cuenta.gif" alt="JEANWEST" class="img-fluid me-4 mt-1 icono-menu-web"/>
                             </li>
                             <li class="nav-item borde me-2 ms-2">
-                               <img src="img/icono-fav.png" alt="JEANWEST" class="img-fluid me-4 mt-1"/>
+                               <img src="img/icono-Wishlist.gif" alt="JEANWEST" class="img-fluid me-4 mt-1 icono-menu-web"/>
                             </li>
                             <li class="nav-item ms-2">
-                                <img src="img/icono-carrito.png" alt="JEANWEST" class="img-fluid mt-1"/>
+                                <img src="img/icono-Carrito.gif" alt="JEANWEST" class="img-fluid mt-1 icono-menu-web"/>
                              </li>
                         </ul>
                     </div>
@@ -127,7 +130,9 @@
             <img src="img/logo_bco.png" alt="JEANWEST" class="img-fluid"/>
             <div class="pt-5">
                 <bnt class="btn btn-primary btn-conoce">
-                    <h6 class="pt-1 WorkB">Conoce más</h6>
+                    <a href="negocio.html" class="a_none_style text-white">
+                        <h6 class="pt-1 WorkB">Conoce más</h6>
+                    </a>
                 </bnt>
             </div>
         </div>
@@ -549,18 +554,18 @@
                                             </div>
                                             <div class="hover">
                                                 <div class="ver text-center">
-                                                    <a href="#">
+                                                    <a href="detalle-producto.html">
                                                         <img src="img/icono-ver-hover.png" alt="Ver" class="img-fluid pt-3"/>
                                                     </a>
                                                 </div>
                                                 <div class="pt-2"></div>
                                                 <div class="fav text-center">
-                                                    <a href="#">
+                                                    <a href="wish-list.html">
                                                         <img src="img/icono-fav.png" alt="Wish list" class="img-fluid pt-3"/>
                                                     </a>
                                                 </div>
                                                 <div class="text-start pt-3">
-                                                    <button class="btn btn-primary btn-carrito">
+                                                    <button class="btn btn-primary btn-carrito" href="carrito.html">
                                                         <h6 class="pt-2 SemiBold">
                                                             <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
                                                             AGREGAR AL CARRITO
@@ -657,8 +662,10 @@
             <div class="col-12 col-lg-10 col-sm-12 col-md-12">
                 <div class="row tendencias">
                     <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                        <img src="img/tendencias-mujer.png" alt="JEANWEST" class="img-fluid"/>
-                        <img src="img/tit-moda-H.png" alt="Moda para hombre" class="img-fluid pt-2"/>
+                        <img src="img/tendencias-mujer.png" alt="JEANWEST" class="img-fluid pb-4"/>
+                        <h1 class="Light">Moda</h1>
+                        <h2 class="ExtraBold display-5">para <br>
+                            <b class="txt-azul">hombre</b> </h2>
                         <div class="bordes">
                             <div class="ms-5 pt-4 pb-5">
                                 <h2 class="SemiBold h4">En Jeanwest</h2>
@@ -693,7 +700,8 @@
                     <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
                     <div class="col-12 col-lg-5 col-sm-12 col-md-12">
                         <div class="tendencias-mujer">
-                            <img src="img/tit-tendencia-M.png" alt="Tendencias para mujer" class="img-fluid"/>
+                            <h1 class="Light">Tendencias</h1>
+                            <h1 class="ExtraBold display-5">para <b class="txt-azul">mujer</b></h1>
                         </div>
                         <div class="imagen pt-5">
                             <img src="img/tendencias-hombre.png" alt="JEANWEST" class="img-fluid pt-5"/>
@@ -745,14 +753,14 @@
                     <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                         <div class="box-border pb-5">
                             <aside class="mx-3 py-2">
-                                <img src="img/icono-entregas.png" alt="Entregas a tiempo" class="img-fluid icono-define me-3"/>
+                                <img src="img/icono-Envio.gif" alt="Entregas a tiempo" class="img-fluid icono-define me-3 pt-3"/>
                                 <h6 class="bold pt-4 text-center">ENTREGAS A TIEMPO</h6>
                                 <h6 class="Light text-center">Entregas en menos de 4 días</h6>
                             </aside>
                         </div>
                         <div class="box-border mt-4 py-2">
                             <aside class="mx-3 py-4">
-                                <img src="img/icono-servicio.png" alt="Servicio de calidad" class="img-fluid icono-define me-3"/>
+                                <img src="img/icono-Atencion_A_Cliente.gif" alt="Servicio de calidad" class="img-fluid icono-define me-3"/>
                                 <h6 class="bold pt-3 text-center">SERVICIO DE CALIDAD</h6>
                                 <h6 class="Light text-center">Servicio personalizado para cada cliente</h6>
                             </aside>
@@ -761,14 +769,14 @@
                     <div class="col-12 col-lg-4 col-sm-12 col-md-12">
                         <div class="box-border pb-5">
                             <aside class="mx-3 py-3">
-                                <img src="img/icono-calidad.png" alt="Alta calidad" class="img-fluid icono-define me-3"/>
+                                <img src="img/icono-Servicio_De_Calidad.gif" alt="Alta calidad" class="img-fluid icono-define me-3"/>
                                 <h6 class="bold pt-3 text-center">ALTA CALIDAD</h6>
                                 <h6 class="Light text-center">Productos de alta calidad</h6>
                             </aside>
                         </div>
                         <div class="box-border mt-4 py-2">
                             <aside class="mx-3 py-4">
-                                <img src="img/icono-tendencias.png" alt="Últimas tendencias" class="img-fluid icono-define me-3"/>
+                                <img src="img/icono-Pantalon.gif" alt="Últimas tendencias" class="img-fluid icono-define me-3"/>
                                 <h6 class="bold pt-3 text-center">ÚLTIMAS TENDENCIAS</h6>
                                 <h6 class="Light text-center">Vanguardia en las tendencias de moda</h6>
                             </aside>
@@ -799,9 +807,9 @@
                         <div class="row">
                             <div class="col-12 col-lg-3 col-sm-12 col-md-12">
                                 <img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid pb-4"/>
-                                <h6 class="txt-gris-precio Regular">Calle Abasolo 105,</h6>
-                                <h6 class="txt-gris-precio Regular">Col. San Agustíin, C.P 45645</h6>
-                                <h6 class="pb-3 txt-gris-precio Regular">Jalisco, México</h6>
+                                <h6 class="txt-gris Regular">Calle Abasolo 105</h6>
+                                <h6 class="txt-gris Regular">Col. San Agustíin, C.P 45645</h6>
+                                <h6 class="pb-3 txt-gris Regular">Jalisco, México</h6>
                                 <a href="https://www.facebook.com/jeanswestgdl" class="a_none_style" target="_blank" rel="noopener noreferrer">
                                     <img src="img/fb.png" alt="JEANWEST" class="img-fluid me-3"/>                            
                                 </a>
@@ -816,16 +824,16 @@
                                 <div class="ms-5">
                                     <h6 class="pb-4 bold">MENU</h6>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">INICIO</h5>
+                                        <h5 class="h6 txt-gris">INICIO</h5>
                                     </a>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">JEANWEST</h5>
+                                        <h5 class="h6 txt-gris">JEANWEST</h5>
                                     </a>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">TU NEGOCIO</h5>
+                                        <h5 class="h6 txt-gris">TU NEGOCIO</h5>
                                     </a>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">CONTACTO</h5>
+                                        <h5 class="h6 txt-gris">CONTACTO</h5>
                                     </a>
                                 </div>
                                 
@@ -833,25 +841,25 @@
                             <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
                                 <h6 class="pb-4 bold">INFORMACIÓN</h6>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Términos y condiciones</h5>
+                                    <h5 class="h6 txt-gris">Términos y condiciones</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Política de privacidad</h5>
+                                    <h5 class="h6 txt-gris">Política de privacidad</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Política de Cookies</h5>
+                                    <h5 class="h6 txt-gris">Política de Cookies</h5>
                                 </a>
                             </div>
                             <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
                                 <h6 class="pb-4 bold">MI CUENTA</h6>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Mi cuenta</h5>
+                                    <h5 class="h6 txt-gris">Mi cuenta</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Registrarme</h5>
+                                    <h5 class="h6 txt-gris">Registrarme</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Whislist</h5>
+                                    <h5 class="h6 txt-gris">Whislist</h5>
                                 </a>
                             </div>
                         </div>
@@ -878,7 +886,7 @@
                 <div class="col-12 col-lg-10 col-sm-12 col-md-12">
                     <div class="row">
                         <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                            <h5 class="h6 py-4 txt-gris-precio Regular"> ©2022 JEANWEST Todos los derechos reservados</h5>
+                            <h5 class="h6 py-4 txt-gris Regular"> ©2022 JEANWEST Todos los derechos reservados</h5>
                         </div>
                         <div class="col-12 col-lg-6 col-sm-12 col-md-12">
                             <img src="img/materialized-negro.gif" alt="Materialized by Bluebery" class="img-fluid bb-materialized py-3"/>

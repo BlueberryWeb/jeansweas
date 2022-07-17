@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://kit.fontawesome.com/4514d9060c.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css"/>
+    <title>JEANWEST</title>
+</head>
+<body>
+     <!--BOTÓN DE WHATSAPP-->
+     <a href="#" class="btn-flotante-whats"><i class="fa-brands fa-whatsapp"></i></a>
+    <!--TERMOMETRO-->
+    <a href="#" class="btn-flotante"><img src="img/termometro.png" alt="JEANWEST" class="img-fluid"/></a>
+
+     <!--HEADER CELULAR-->
+    <!--HEADER COMPUTADORA-->
+    <header>
+        <div class="menu-web fixed-top"">
+            <nav class="navbar navbar-expand-lg navbar-ligh">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid logo-header"/></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto bold">
+                            <li class="nav-item me-4 active">
+                                <a class="nav-link Medium" href="negocio.html">TU NEGOCIO</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <a class="nav-link me-0 Medium" href="contacto.html">CONTACTO</a>
+                            </li>
+                            <li class="nav-item me-4">
+                                <div class="inner-addon right-addon form-group">
+                                    <img src="img/icono-Busqueda.gif" alt="" class="glyphicon "/>
+                                    <input class="form-control" name="Buscar" placeholder="Buscar">
+                                  </div>
+                            </li>
+                            <li class="nav-item borde me-2">
+                                <img src="img/icono-mi_cuenta.gif" alt="JEANWEST" class="img-fluid me-4 mt-1 icono-menu-web"/>
+                            </li>
+                            <li class="nav-item borde me-2 ms-2">
+                               <img src="img/icono-Wishlist.gif" alt="JEANWEST" class="img-fluid me-4 mt-1 icono-menu-web"/>
+                            </li>
+                            <li class="nav-item ms-2">
+                                <img src="img/icono-Carrito.gif" alt="JEANWEST" class="img-fluid mt-1 icono-menu-web"/>
+                             </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav> 
+            <div class="container-fluid bg-light">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                        <div class="d-flex justify-content-center">
+                            <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+                                <div class="container-fluid">
+                                  <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="navbar-nav Medium">
+                                      <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">MODA</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">MUJER</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="#">HOMBRE</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link">NOVEDADES</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link">TENDENCIAS</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="tienda.html">CATÁLOGOS</a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container py-5 tienda">
+        <div class="row">
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+            <div class="col-12 col-lg-10 col-sm-12 col-md-12">
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                        <div class="filtro-web py-3">
+                            <div class="text-center mx-2">
+                                <label for="customRange2" class="form-label Medium">Filtro</label>
+                                <input type="range" class="form-range" min="0" max="5" id="customRange2">
+                            </div>
+                            <aside class="mx-2">
+                                <h6 class="Medium  box-filtro pt-3">Precio $200 - $300 </h6>
+                                <button class="btn btn-primary Medium btn-filtro">
+                                    <h6 class="pt-1">Filtro</h6>
+                                </button>
+                            </aside>
+                        </div>
+                        <h5 class="border-bottom pb-4 pt-5 Medium h4">Categorías</h5>
+                        <button class="collapsible Medium"><h5 class="h6 pt-1">MODA</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">NOVEDADES</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">HOMBRE</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">TENDENCIAS</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <h5 class="border-bottom pb-3 pt-4 Medium h4">Tipo</h5>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">PIERNA RECTA</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">MOM</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">PIERNA ANCHA</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">PIERNA AMPLIA</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">ENTUBADOS</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <button class="collapsible Medium"><h5 class="h6 pt-2">VAQUEROS</h5></button>
+                        <div class="content">
+                           <h5 class="h6 txt-azul Medium">MUJER</h5>
+                        </div>
+                        <h5 class="border-bottom pb-3 pt-4 Medium h4">Color</h5>
+                        <img src="img/color-1.png" alt="JEANWEST" class="img-fluid me-3"/>
+                        <img src="img/color-2.png" alt="JEANWEST" class="img-fluid me-3"/>
+                        <img src="img/color-3.png" alt="JEANWEST" class="img-fluid"/>
+        
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                        <div class="row">
+                            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+                                <h6 class="Medium pb-3">1-9 de 300 RESULTADOS</h6>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12"></div>
+                            <div class="col-12 col-lg-2 col-sm-12 col-md-12">
+                                <div class="ordenar">
+                                    <select class="form-select px-3 py-2" aria-label="Default select example">
+                                        <option selected >Ordernar por</option>
+                                        <option value="1">Precio: De menor a mayor</option>
+                                        <option value="2">Precio de mayor a menor</option>
+                                        <option value="3">Más reciente</option>
+                                    </select>
+                                </div>
+                            </div>
+                           
+                            <hr class="hr-tienda mb-5">
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-short.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-center pt-3 hover-wishlist">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-gris-whislist like-wish">
+                                    <h6>
+                                    18k 
+                                    <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                    </h6>
+                                  </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Culotte 8909</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-pantalon-2.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Culotte 7801</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-pantalon3.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Verde 1156</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row py-5">
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-short.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Culotte 8909</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-pantalon-2.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Culotte 7801</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-pantalon3.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Verde 1156</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-short.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Culotte 8909</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-pantalon-2.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Culotte 7801</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                                <div class="novedad">
+                                    <div class="producto">
+                                        <img src="img/muestra-pantalon3.png" alt="JEANWEST" class="img-fluid pb-3"/>
+                                        <div class="bg-gris-whislist like-wish">
+                                          <h6>
+                                          18k 
+                                          <img src="img/corazon-whislist.png" alt="Whislist" class=" icono-whislist"/>
+                                          </h6>
+                                        </div>
+                                    </div>
+                                    <div class="hover">
+                                        <div class="text-start pt-3">
+                                            <button class="btn btn-primary btn-carrito">
+                                                <h6 class="pt-2 SemiBold">
+                                                    <img src="img/icono-carrito-hover.png" alt="Agregar al carrito" class="img-fluid me-2"/>
+                                                    AGREGAR AL CARRITO
+                                                </h6>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="nombre-producto">
+                                    <h5 class="Regular">Pantalón Verde 1156</h5>
+                                    <h6 class="Regular txt-azul-precio">$79.99</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-end pt-5">
+                        <hr class="hr-tienda">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-9"></div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-3">
+                            <nav aria-label="..." class="paginacion">
+                                <ul class="pagination">
+                                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                  <li class="page-item " aria-current="page">
+                                    <span class="page-link">2</span>
+                                  </li>
+                                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                  <li class="page-item"><a class="page-link" href="#">6</a></li>
+                                  <li class="page-item">
+                                    <a class="a_none_style" href="#">
+                                        <h6 class=" ms-3"><i class="fa-solid fa-angle-right"></i></h6></a>
+                                  </li>
+                                </ul>
+                              </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+            
+          </div>
+    </div>
+
+
+
+
+
+    <footer>
+        <div class="container-fluid bg-gris">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+                    <div class="col-12 col-lg-10 col-sm-12 col-md-12">
+                        <div class="row">
+                            <div class="col-12 col-lg-3 col-sm-12 col-md-12">
+                                <img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid pb-4"/>
+                                <h6 class="txt-gris Regular">Calle Abasolo 105</h6>
+                                <h6 class="txt-gris Regular">Col. San Agustíin, C.P 45645</h6>
+                                <h6 class="pb-3 txt-gris Regular">Jalisco, México</h6>
+                               <a href="https://www.facebook.com/jeanswestgdl" class="a_none_style" target="_blank" rel="noopener noreferrer">
+                                    <img src="img/fb.png" alt="JEANWEST" class="img-fluid me-3"/>                            
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCQYEMjtqt--HQMUtFMGJqSA" class="a_none_style" target="_blank" rel="noopener noreferrer">
+                                    <img src="img/yt.png" alt="JEANWEST" class="img-fluid me-3"/>
+                                </a>
+                                <a href="https://www.instagram.com/jeanswest_mx/" class="a_none_style" target="_blank" rel="noopener noreferrer">
+                                    <img src="img/ig.png" alt="JEANWEST" class="img-fluid me-3"/>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
+                                <div class="ms-5">
+                                    <h6 class="pb-4 bold">MENU</h6>
+                                    <a href="#" class="a_none_style">
+                                        <h5 class="h6 txt-gris">INICIO</h5>
+                                    </a>
+                                    <a href="#" class="a_none_style">
+                                        <h5 class="h6 txt-gris">JEANWEST</h5>
+                                    </a>
+                                    <a href="#" class="a_none_style">
+                                        <h5 class="h6 txt-gris">TU NEGOCIO</h5>
+                                    </a>
+                                    <a href="#" class="a_none_style">
+                                        <h5 class="h6 txt-gris">CONTACTO</h5>
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
+                                <h6 class="pb-4 bold">INFORMACIÓN</h6>
+                                <a href="#" class="a_none_style">
+                                    <h5 class="h6 txt-gris">Términos y condiciones</h5>
+                                </a>
+                                <a href="#" class="a_none_style">
+                                    <h5 class="h6 txt-gris">Política de privacidad</h5>
+                                </a>
+                                <a href="#" class="a_none_style">
+                                    <h5 class="h6 txt-gris">Política de Cookies</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
+                                <h6 class="pb-4 bold">MI CUENTA</h6>
+                                <a href="#" class="a_none_style">
+                                    <h5 class="h6 txt-gris">Mi cuenta</h5>
+                                </a>
+                                <a href="#" class="a_none_style">
+                                    <h5 class="h6 txt-gris">Registrarme</h5>
+                                </a>
+                                <a href="#" class="a_none_style">
+                                    <h5 class="h6 txt-gris">Whislist</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+                <div class="col-12 col-lg-10 col-sm-12 col-md-12">
+                    <div class="text-end">
+                        <img src="img/tarjetas.png" alt="Métodos de pago" class="img-fluid"/>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+                <div class="col-12 col-lg-10 col-sm-12 col-md-12">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+                            <h5 class="h6 py-4 txt-gris Regular"> ©2022 JEANWEST Todos los derechos reservados</h5>
+                        </div>
+                        <div class="col-12 col-lg-6 col-sm-12 col-md-12">
+                            <img src="img/materialized-negro.gif" alt="Materialized by Bluebery" class="img-fluid bb-materialized py-3"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+</body>
+</html>

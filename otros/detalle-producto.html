@@ -10,7 +10,9 @@
     <title>JEANWEST</title>
 </head>
 <body>
-
+     <!--BOTÓN DE WHATSAPP-->
+     <a href="#" class="btn-flotante-whats"><i class="fa-brands fa-whatsapp"></i></a>
+    <!--TERMOMETRO-->
     <a href="#" class="btn-flotante"><img src="img/termometro.png" alt="JEANWEST" class="img-fluid"/></a>
 
      <!--HEADER CELULAR-->
@@ -19,7 +21,7 @@
         <div class="menu-web fixed-top"">
             <nav class="navbar navbar-expand-lg navbar-ligh">
                 <div class="container">
-                    <a class="navbar-brand" href="index.html"><img src="img/jeanswest-logo-azul.png" alt="JEANWEST" class="img-fluid logo-header"/></a>
+                    <a class="navbar-brand" href="index.html"><img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid logo-header"/></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
@@ -33,18 +35,18 @@
                             </li>
                             <li class="nav-item me-4">
                                 <div class="inner-addon right-addon form-group">
-                                    <img src="img/icono-search.png" alt="" class="glyphicon ">
+                                    <img src="img/icono-Busqueda.gif" alt="" class="glyphicon "/>
                                     <input class="form-control" name="Buscar" placeholder="Buscar">
                                   </div>
                             </li>
                             <li class="nav-item borde me-2">
-                                <img src="img/icono-login.png" alt="JEANWEST" class="img-fluid me-4 mt-1"/>
+                                <img src="img/icono-mi_cuenta.gif" alt="JEANWEST" class="img-fluid me-4 mt-1 icono-menu-web"/>
                             </li>
                             <li class="nav-item borde me-2 ms-2">
-                               <img src="img/icono-fav.png" alt="JEANWEST" class="img-fluid me-4 mt-1"/>
+                               <img src="img/icono-Wishlist.gif" alt="JEANWEST" class="img-fluid me-4 mt-1 icono-menu-web"/>
                             </li>
                             <li class="nav-item ms-2">
-                                <img src="img/icono-carrito.png" alt="JEANWEST" class="img-fluid mt-1"/>
+                                <img src="img/icono-Carrito.gif" alt="JEANWEST" class="img-fluid mt-1 icono-menu-web"/>
                              </li>
                         </ul>
                     </div>
@@ -134,7 +136,7 @@
                             <h3 class="h6 Regular">SKU: PC008</h3>
                         </div>
                         <div class="">
-                            <button class="btn btn-primary btn-guia">
+                            <button class="btn btn-primary btn-guia"  type="button" data-bs-toggle="modal" data-bs-target="#guia-tallas">
                                 <h6 class="pt-1 SemiBold">
                                     <img src="img/icono-cinta.png" alt="JEANWEST" class="img-fluid me-4"/>
                                     Guía de tallas
@@ -183,14 +185,6 @@
                                 Añadir a wishlist
                             </h6>
                         </div>
-                        <div class="row">
-                            <div class="col-12 col-lg-2 col-sm-12 col-md-12">
-                            </div>
-                            <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                               
-                            </div>
-                           
-                        </div>
                     </div>
                 </div>
             </div>
@@ -204,22 +198,90 @@
             <div class="col-12 col-lg-10 col-sm-12 col-md-12">
                 <div class="container">
                     <div class="row">
-                        <div class="ms-1">
-                            <button class="btn-hover btn-3 hover-border-2">
-                                <span class="h1 Work">Descripción</span>
-                            </button>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                        <div class="col-12 col-lg-3 col-sm-12 col-md-12">
+                            <div class="borde-bco py-5">
+                                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                    <ul class="nav flex-column">
+                                        <li class="nav-item">
+                                          <a class="nav-link active"  id="v-pills-home-tab" data-bs-toggle="pill" data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home" aria-selected="true">Descripción</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link txt-gris" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Información adicional</a>
+                                        </li>
+                                        <li class="nav-item">
+                                          <a class="nav-link txt-gris" id="v-pills-messages-tab" data-bs-toggle="pill" data-bs-target="#v-pills-messages" type="button" role="tab" aria-controls="v-pills-messages" aria-selected="false">Comentarios (10)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
-
-                        <div class="descripcion-prod pt-4">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugiat eius quae. Tempora quaerat commodi sed amet unde temporibus omnis? Minima fugiat unde eveniet nulla incidunt fugit asperiores dolore laborum.
-                            </p>
-                            <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam repellat deserunt architecto commodi ab, dolorum consequuntur consectetur repudiandae iure incidunt, dolore animi iusto minima praesentium alias quos doloribus et!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque cum voluptatem accusantium numquam impedit, illum dignissimos fugiat enim ullam necessitatibus, perferendis consequatur? Odit earum autem hic, quia nulla ex!
-                            </p>
+                        <div class="col-12 col-lg-7 col-sm-12 col-md-12">
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                                  <div class="descripcion-prod pt-4">
+                                      <p>
+                                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque fugiat eius quae. Tempora quaerat commodi sed amet unde temporibus omnis? Minima fugiat unde eveniet nulla incidunt fugit asperiores dolore laborum.
+                                      </p>
+                                      <p>
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam repellat deserunt architecto commodi ab, dolorum consequuntur consectetur repudiandae iure incidunt, dolore animi iusto minima praesentium alias quos doloribus et!
+                                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, doloremque cum voluptatem accusantium numquam impedit, illum dignissimos fugiat enim ullam necessitatibus, perferendis consequatur? Odit earum autem hic, quia nulla ex!
+                                      </p>
+                                  </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                                    <div class="info-add">
+                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas, laborum quisquam in itaque molestiae, fugiat ea repellendus reprehenderit exercitationem distinctio dolor. Doloremque perspiciatis repudiandae quam accusamus pariatur doloribus culpa. Error!</p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                                    <div class="comments">
+                                        <h3 class="h5 txt-azul">Comentario 1</h3>
+                                        <h6 >Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 2</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 3</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 4</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 5</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 6</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 7</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 8</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 9</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+                                        <h3 class="h5 txt-azul">Comentario 10</h3>
+                                        <h6>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, nostrum facilis deleniti debitis aliquid corporis asperiores illo laboriosam pariatur dicta non nobis provident ut consectetur exercitationem repellat vero eius reprehenderit.</h6>
+  
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-8 col-sm-12 col-md-12"></div>
+                    <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                        <div class="bg-gris py-3">
+                            <div class="mx-3">
+                                <h6 class="Regular">
+                                    <img src="img/icono-pantaloncito.png" alt="JEANWEST" class="img-fluid me-2"/>
+                                    Envío gratis en plan <b class="txt-azul">Emprendedor</b>
+                                </h6>
+                                <h6 class="Regular">
+                                    <img src="img/icono-politica.png" alt="JEANWEST" class="img-fluid me-2"/>
+                                    Política de devoluciones
+                                </h6>
+                            </div>
+                            
                         </div>
                     </div>
+                   
                 </div>
             </div>
             <div class="col-12 col-lg-1 col-sm-12 col-md-12"></div>
@@ -516,9 +578,9 @@
                         <div class="row">
                             <div class="col-12 col-lg-3 col-sm-12 col-md-12">
                                 <img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid pb-4"/>
-                                <h6 class="txt-gris-precio Regular">Calle Abasolo 105,</h6>
-                                <h6 class="txt-gris-precio Regular">Col. San Agustíin, C.P 45645</h6>
-                                <h6 class="pb-3 txt-gris-precio Regular">Jalisco, México</h6>
+                                <h6 class="txt-gris Regular">Calle Abasolo 105</h6>
+                                <h6 class="txt-gris Regular">Col. San Agustíin, C.P 45645</h6>
+                                <h6 class="pb-3 txt-gris Regular">Jalisco, México</h6>
                                 <a href="https://www.facebook.com/jeanswestgdl" class="a_none_style" target="_blank" rel="noopener noreferrer">
                                     <img src="img/fb.png" alt="JEANWEST" class="img-fluid me-3"/>                            
                                 </a>
@@ -533,16 +595,16 @@
                                 <div class="ms-5">
                                     <h6 class="pb-4 bold">MENU</h6>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">INICIO</h5>
+                                        <h5 class="h6 txt-gris">INICIO</h5>
                                     </a>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">JEANWEST</h5>
+                                        <h5 class="h6 txt-gris">JEANWEST</h5>
                                     </a>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">TU NEGOCIO</h5>
+                                        <h5 class="h6 txt-gris">TU NEGOCIO</h5>
                                     </a>
                                     <a href="#" class="a_none_style">
-                                        <h5 class="h6 txt-gris-precio">CONTACTO</h5>
+                                        <h5 class="h6 txt-gris">CONTACTO</h5>
                                     </a>
                                 </div>
                                 
@@ -550,25 +612,25 @@
                             <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
                                 <h6 class="pb-4 bold">INFORMACIÓN</h6>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Términos y condiciones</h5>
+                                    <h5 class="h6 txt-gris">Términos y condiciones</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Política de privacidad</h5>
+                                    <h5 class="h6 txt-gris">Política de privacidad</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Política de Cookies</h5>
+                                    <h5 class="h6 txt-gris">Política de Cookies</h5>
                                 </a>
                             </div>
                             <div class="col-12 col-lg-3 col-sm-12 col-md-12 Regular">
                                 <h6 class="pb-4 bold">MI CUENTA</h6>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Mi cuenta</h5>
+                                    <h5 class="h6 txt-gris">Mi cuenta</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Registrarme</h5>
+                                    <h5 class="h6 txt-gris">Registrarme</h5>
                                 </a>
                                 <a href="#" class="a_none_style">
-                                    <h5 class="h6 txt-gris-precio">Whislist</h5>
+                                    <h5 class="h6 txt-gris">Whislist</h5>
                                 </a>
                             </div>
                         </div>
@@ -595,7 +657,7 @@
                 <div class="col-12 col-lg-10 col-sm-12 col-md-12">
                     <div class="row">
                         <div class="col-12 col-lg-6 col-sm-12 col-md-12">
-                            <h5 class="h6 py-4 txt-gris-precio Regular"> ©2022 JEANWEST Todos los derechos reservados</h5>
+                            <h5 class="h6 py-4 txt-gris Regular"> ©2022 JEANWEST Todos los derechos reservados</h5>
                         </div>
                         <div class="col-12 col-lg-6 col-sm-12 col-md-12">
                             <img src="img/materialized-negro.gif" alt="Materialized by Bluebery" class="img-fluid bb-materialized py-3"/>
@@ -607,7 +669,125 @@
         </div>
     </footer>
    
-    
+    <!-- Modal -->
+    <div class="modal fade" id="guia-tallas" tabindex="-1" aria-labelledby="guia-tallasLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <div class="row pb-5">
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-sm-12 col-md-12"></div>
+                    <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                        <h1 class="ExtraBold txt-azul">Guía de Tallas</h1>
+                    </div>
+                    <div class="col-12 col-lg-4 col-sm-12 col-md-12">
+                    <div class="text-end">
+                        <img src="img/logo-azul.png" alt="JEANWEST" class="img-fluid"/>
+                    </div>
+                    </div>
+                </div>
+                <div class="pt-3 text-center">
+                    <h1 class="txt-azul ExtraBold h3">Medidas del producto <b class="text-black Medium">/ Medidas del cuerpo</b></h1>
+                </div>
+                <div class="container pt-5">
+                <!--TABLA CON LAS TALLAS-->
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-10">
+                    <div class="row">
+                        <table class="table text-center table-borderless">
+                        <thead class="table-active ExtraBold ">
+                            <tr>
+                                <th scope="col">Talla</th>
+                                <th scope="col">Largo</th>
+                                <th scope="col">Contorno cintura</th>
+                                <th scope="col">Contorno cadera</th>
+                                <th scope="col">Muslo</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr class="Medium">
+                                <th scope="row" class="SemiBold">XS</th>
+                                <td>97</td>
+                                <td>54-74</td>
+                                <td>95</td>
+                                <td>60.8</td>
+                            </tr>
+                            <tr class="Medium">
+                                <th scope="row" class="SemiBold">S</th>
+                                <td>98.5</td>
+                                <td>58-78</td>
+                                <td>99</td>
+                                <td>63.4</td>
+                            </tr>
+                            <tr class="Medium">
+                                <th scope="row" class="SemiBold">M</th>
+                                <td>100</td>
+                                <td>62-82</td>
+                                <td>103</td>
+                                <td>66</td>
+                            </tr>
+                            <tr class="Medium">
+                                <th scope="row" class="SemiBold">L</th>
+                                <td>101.5</td>
+                                <td>66-86</td>
+                                <td>107</td>
+                                <td>68.6</td>
+                            </tr>
+                            <tr class="Medium">
+                                <th scope="row" class="SemiBold">XL</th>
+                                <td>103</td>
+                                <td>70-90</td>
+                                <td>111</td>
+                                <td>71.2</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--TALLA DEL PRODUCTO-->
+                    <div class="row pt-5">
+                        <div class="col-12 col-lg-7 col-sm-12 col-md-12">
+                        <div class="desc-tallas">
+                        <h1 class="Medium h3">Talla del producto:</h1>
+                        <h2 class="bold  h5 pt-4">1. Cintura del Bottom</h2>
+                        <h3 class="Medium h6">Mida en línea recta la parte superior de la cintura </h3>
+                        <h3 class="Medium h6">de borde a borde.</h3>
+                        <h2 class="bold h5 pt-3">2. Caderas</h2>
+                        <h3 class="Medium h6">Mida recto la anchura de la línea de las caderas </h3>
+                        <h3 class="Medium h6">de un lado a otro.</h3>
+                        <h2 class="bold h5 pt-3">3. Muslo</h2>
+                        <h3 class="Medium h6">Mida en línea recta desde la costura de la </h3>
+                        <h3 class="Medium h6">entrepierna hasta la parte exterior de la pierna.</h3>
+                        <h2 class="bold h5 pt-3">4. Largo de vestido/Largo</h2>
+                        <h3 class="Medium h6">Mide desde la cintura hasta la abertura de la </h3>
+                        <h3 class="Medium h6">pierna o el dobladillo.</h3>
+                        <h2 class="bold h5">5. Entrepierna</h2>
+                        <h3 class="Medium h6">Mida la longitud desde la costura de la entrepierna </h3>
+                        <h3 class="Medium h6">hasta la parte inferior de la pierna.</h3>
+                        </div>
+                        </div>
+                        <div class="col-12 col-lg-5 col-sm-12 col-md-12">
+                        <div class="text-end">
+                            <img src="img/pantalon-guia.png" alt="JEANWEST" class="img-fluid"/>
+                        </div>
+                        </div>
+                        
+                    </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-1"></div>
+                </div>
+                
+                </div>
+                
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
