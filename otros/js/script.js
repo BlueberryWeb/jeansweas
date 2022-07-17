@@ -29,8 +29,8 @@ function peligro_detalle() {
     var imagen = document.getElementById('detalle').src = "img/icono-ver.gif";
 }
 /*WHISLIST*/
-window.addEventListener('load', fav, false);
-function fav() {      
+window.addEventListener('load', whislist, false);
+function whislist() {      
     var imagen = document.getElementById('fav');
     imagen.addEventListener('mouseover', peligro_fav, false);
     imagen.addEventListener('mouseout', restaurar_fav, false);

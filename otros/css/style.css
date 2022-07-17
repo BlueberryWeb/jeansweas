@@ -310,7 +310,7 @@ html, body {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 97%;
     width: 100%;
     opacity: 0;
     cursor: pointer;
@@ -319,13 +319,13 @@ html, body {
     background: #fff;
     width: 50px;
     height: 50px;
-    margin-top: 130px;
+    margin-top: 110px;
 }
 .ver-tienda{
     background: #fff;
     width: 50px;
     height: 50px;
-    margin-top: 170px;
+    margin-top: 150px;
 }
 .fav{
     background: #fff;
@@ -788,6 +788,9 @@ html, body {
 .modal-header{
     border: none;
 }
+.bg-modal{
+    background-color: #EDEDED;
+}
 /*TERMINA MODAL DE TALLAS*/
 .borde-bco{
     border: 1.5px solid #DEDEDE;
@@ -858,4 +861,96 @@ html, body {
 }
 #carrito{
     width: 20px;
+}
+.fa-solid{
+    color: #000000;
+    font-size: 20px;
+}
+.logo-phone{
+    width: 200px;
+}
+.menu-phone{
+    background-color: #fff;
+}
+.icono-menu-phone{
+    width: 20px;
+    display: inline;
+}
+.iconos-superiores a{
+    display: inline;
+    float: left;
+}
+.menu-side{
+    margin-top: -6px;
+}
+@media (max-width:400px){
+    .ver{
+        margin-top: 280px;
+    }
+    .bordes{
+        position: relative;
+        width: 100%;
+        left: 0;
+        line-height: 50%;
+    }
+    .tendencias-mujer{
+        margin-left: 5.5rem;
+        margin-top: -8rem;
+    }
+    .relleno{
+        position:relative;
+        width: 100%;
+        left: 0;
+        text-align: center;
+        line-height: 50%;
+    }
+    .tendencias{
+        margin-bottom: 400px;
+    }
+    .menu-footer{
+        margin-left: 0!important;
+        margin-top: 3rem;
+    }
+    .info-footer{
+        margin-top: 3rem;
+    }
+    .cuenta-footer{
+        margin-top: 3rem;
+    }
+    /*NEGOCIO*/
+    .txt-negocio{
+        margin-top: 5rem;
+    }
+    .box-genera{
+        width: 100%;
+        height: 350px;
+        left: 0;
+        margin-bottom: 20px;
+        position: relative;
+    }
+    .genera{
+        margin-top: 3rem;
+    }
+    .ganancias{
+        position: relative;
+        left:0;
+        margin-bottom: 20px;
+    }
+    .disenos{
+        text-align: center;
+        margin-left: 0;
+        position: relative;
+    }
+    .txt-ingresos{
+        margin-top: 10rem;
+    }
+    .image-celular{
+        width: 100px;
+        position: absolute;
+        margin-top: 1rem;
+        left: 60%;
+    }
+    .ver-tienda{
+        margin-top: 270px;
+    }
 }
