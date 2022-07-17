@@ -883,6 +883,9 @@ html, body {
 .menu-side{
     margin-top: -6px;
 }
+.dropdown-toggle::after {
+    content: none;
+}
 @media (max-width:400px){
     .ver{
         margin-top: 280px;
