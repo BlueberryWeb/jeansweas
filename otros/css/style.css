@@ -243,7 +243,10 @@ html, body {
 .btn-cantidad{
     background-color: #F4F4F4;
     width: 150px;
-    padding: 15px;
+    padding: 5px;
+}
+.btn-cantidad h6{
+    font-size: 14px;
 }
 /*TERMINA BOTONES*/
 .inner-addon {
@@ -796,6 +799,9 @@ html, body {
     border: 1.5px solid #DEDEDE;
     color: #DEDEDE;
 }
+.tabla-facturacion{
+    border: 2px solid #AAAAAA;
+}
 .tabla-facturacion th, td{
     color: #6A6A6A;
 }
@@ -842,14 +848,6 @@ html, body {
     background: transparent;
     border: none;
 }
-.menos{
-    border-radius: 100%;
-    text-align: center;
-    border-radius: 100%;
-    width: 30px;
-    height: 30px;
-    border: 2px solid #5398E6;
-}
 .icono-menu-web{
     width: 30px;
 }
@@ -885,6 +883,57 @@ html, body {
 }
 .dropdown-toggle::after {
     content: none;
+}
+.titulo-producto p{
+    font-size: 12px;
+}
+.total-piezas h6{
+    font-size: 14px;
+}
+.menos{
+    border-radius: 100%;
+    text-align: center;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #5398E6;
+    position: relative;
+    margin-top: 10px;
+}
+.menos h6{
+    position: absolute;
+    top: -10px;
+    left: 3.8px;
+}
+.mas{
+    border-radius: 100%;
+    border: 2px solid #5398E6;
+    position: relative;
+    margin-top: 10px;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    background-color: #5398E6;
+    text-align: center;
+}
+.mas h6{
+    position: absolute;
+    top: -10px;
+    left: 3.8px;
+    color: #fff;
+}
+.fa-plus{
+    color: #fff;
+    font-size: 14px;
+}
+.fa-minus{
+    color: #5398E6;
+    font-size: 14px;
+}
+.icono-politica{
+    width: 20px;
+}
+.icono-envio{
+    width: 23px;
 }
 @media (max-width:400px){
     .ver{
