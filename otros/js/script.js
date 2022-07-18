@@ -14,46 +14,6 @@ for (i = 0; i < coll.length; i++) {
   });
 }
 /*TERMINA COLLAPSE DE CATEGORIAS */
-//CAMBIAR IMAGEN EN EL HOVER DE LOS PRODUCTOS
-/*DETALLE */
-window.addEventListener('load', detalle, false);
-function detalle() {      
-    var imagen = document.getElementById('detalle');
-    imagen.addEventListener('mouseover', peligro_detalle, false);
-    imagen.addEventListener('mouseout', restaurar_detalle, false);
-}
-function restaurar_detalle(){
-    var imagen = document.getElementById('detalle').src = "img/icono-ver-hover.png";
-}
-function peligro_detalle() {
-    var imagen = document.getElementById('detalle').src = "img/icono-ver.gif";
-}
-/*WHISLIST*/
-window.addEventListener('load', whislist, false);
-function whislist() {      
-    var imagen = document.getElementById('fav');
-    imagen.addEventListener('mouseover', peligro_fav, false);
-    imagen.addEventListener('mouseout', restaurar_fav, false);
-}
-function restaurar_fav(){
-    var imagen = document.getElementById('fav').src = "img/icono-fav.png";
-}
-function peligro_fav() {
-    var imagen = document.getElementById('fav').src = "img/icono-Wishlist.gif";
-}
-/*CARRITO */
-window.addEventListener('load', carrito, false);
-function carrito() {      
-    var imagen = document.getElementById('carrito');
-    imagen.addEventListener('mouseover', peligro_carrito, false);
-    imagen.addEventListener('mouseout', restaurar_carrito, false);
-}
-function restaurar_carrito(){
-    var imagen = document.getElementById('carrito').src = "img/icono-carrito-hover.png";
-}
-function peligro_carrito() {
-    var imagen = document.getElementById('carrito').src = "img/icono-Carrito.gif";
-}
 //MENU DESPLEGABLE Y LO DE DETALLE DE PRODUCTO
 
 $(document).ready(function () {
@@ -105,4 +65,103 @@ $(document).ready(function () {
     });
     
     });
-    
+/*ANIMACIONES */
+$(document).ready(function() {
+    ScrollToInit();
+    ActiveSectionNavigation();
+    InitWaypointAnimations({
+        offset: "60%",
+        animateClass: "wp-animated",
+        animateGroupClass: "wp-animated-group"
+    });
+    InitCounterWayPointAnimation();
+  });
+  function ScrollToInit() {
+    $(document).on("click", "a[href^='#']", function(event) {
+        var $anchor = $(this);
+        $("html, body").stop().animate({
+            scrollTop: $($anchor.attr("href")).offset().top
+        }, 1500, "easeInOutExpo");
+        event.preventDefault();
+    });
+  }
+  function ActiveSectionNavigation() {
+    function getNavItemsMap() {
+        const navItemsMap = $("#main-nav").find(".nav-item").map((index, item) => {
+            const $item = $(item);
+            const name = $item.find(".nav-link").attr("href").substring(1);
+            return {
+                key: name,
+                val: $item
+            };
+        })
+        .toArray()
+        .reduce((map, obj) => {
+            map[obj.key] = obj.val;
+            return map;
+        }, {});
+  
+        return navItemsMap;
+    }
+    function deactivateCurrentNavItem() {
+        $("#main-nav").find(".nav-item.active").removeClass("active");
+    }
+    const navItemsMap = getNavItemsMap();
+    $("section").each((index, element) => {
+        const $element = $(element);
+        const sectionName = $element.attr("id");
+        if(sectionName in navItemsMap) {
+            
+            $element.waypoint((direction) => {
+                if(direction === "down") {
+                    deactivateCurrentNavItem();
+                    navItemsMap[sectionName].addClass("active");
+                }
+            },{
+                offset: "50%"
+            });
+            
+            $element.waypoint((direction) => {
+                if(direction === "up") {
+                    deactivateCurrentNavItem();
+                    navItemsMap[sectionName].addClass("active");
+                }
+            },{
+                offset: "-20%"
+            })
+        }
+    });
+  }
+  function InitCounterWayPointAnimation() {
+    $('.counter').each(function () {
+        var $this = $(this);
+        var stop = parseInt($this.text().replace(/,/g, ""));
+        $this.text(0);
+        $this.waypoint(function (direction) {
+            animateNumbers($this, 0, stop);
+            this.destroy();
+        },{
+            triggerOnce: true,
+            offset: "80%"
+        });
+    });  
+  }
+  function animateNumbers(element, start, stop, commas, duration, ease) {
+    var $this = element;
+    commas = (commas === undefined) ? true : commas;
+    $({value: start}).animate({value: stop}, {
+        duration: duration == undefined ? 4000 : duration,
+        easing: ease == undefined ? "swing" : ease,
+        step: function() {
+            $this.text(Math.floor(this.value));
+            if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+        },
+        complete: function() {
+           if (parseInt($this.text()) !== stop) {
+               $this.text(stop);
+               if (commas) { $this.text($this.text().replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,")); }
+           }
+        }
+    });
+  }
+  /* TERMINA ANIMACIONES */

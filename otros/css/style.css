@@ -248,6 +248,12 @@ html, body {
 .btn-cantidad h6{
     font-size: 14px;
 }
+.btn-ingresa-aqui{
+    background-color: #5398E6;
+    border-radius: 0;
+    border-color: #5398E6;
+    width: 180px;
+}
 /*TERMINA BOTONES*/
 .inner-addon {
     position: relative;
@@ -256,7 +262,7 @@ html, body {
     right: 0px;
 }
 .glyphicon {
-    width: 50px;
+    width: 45px;
 }
 .inner-addon .glyphicon {
     position: absolute;
@@ -275,6 +281,14 @@ html, body {
     margin-top: 120px;
     margin-bottom: 150px;
 }
+.vid-negocio{
+    position: relative;
+    margin-bottom: 50px;
+}
+.vid-monitoreo1{
+    position: relative;
+    margin-bottom: 30px;
+}
 .video_index{
     position: absolute;
 }
@@ -282,6 +296,10 @@ html, body {
     background-color: #fff;
 }
 .txt-index{
+    position: relative;
+    color: #fff;
+}
+.txt-contacto{
     position: relative;
     color: #fff;
 }
@@ -371,7 +389,9 @@ html, body {
     text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
 }
 .txt-ingresos{
-    margin-top: 15rem;
+    margin-top: 30rem;
+    position: relative;
+    color: #fff;
 }
 .txt-tipos{
     line-height: normal;
@@ -640,10 +660,10 @@ html, body {
     width: 50px;
 }
 .bordes-tabla{
-    border: 2px solid #AAAAAA;
+    border: 1.5px solid #AAAAAA;
 }
 .bordes-tabla tr{
-    border-bottom: 2px solid #AAAAAA;
+    border-bottom: 1.5px solid #AAAAAA;
 }
 .table{
     margin-bottom: 0;
@@ -800,7 +820,10 @@ html, body {
     color: #DEDEDE;
 }
 .tabla-facturacion{
-    border: 2px solid #AAAAAA;
+    border: 1.5px solid #AAAAAA;
+}
+.tabla-facturacion tr{
+    border-bottom: 1.5px solid #AAAAAA;
 }
 .tabla-facturacion th, td{
     color: #6A6A6A;
@@ -808,6 +831,9 @@ html, body {
 .form-registro{
     font-family: 'Montserrat Regular';
     color: #6A6A6A;
+}
+.txt-forgot-pass h6{
+    font-size: 13px;
 }
 .form-registro h5{
     font-size: 12px;
@@ -888,7 +914,7 @@ html, body {
     font-size: 12px;
 }
 .total-piezas h6{
-    font-size: 14px;
+    font-size: 16px;
 }
 .menos{
     border-radius: 100%;
@@ -898,6 +924,7 @@ html, body {
     border: 2px solid #5398E6;
     position: relative;
     margin-top: 10px;
+    cursor: pointer;
 }
 .menos h6{
     position: absolute;
@@ -914,6 +941,7 @@ html, body {
     color: #fff;
     background-color: #5398E6;
     text-align: center;
+    cursor: pointer;
 }
 .mas h6{
     position: absolute;
@@ -935,6 +963,16 @@ html, body {
 .icono-envio{
     width: 23px;
 }
+.color1, .color2, .color3, .color4, .color5, .color6{
+    width: 30px;
+}
+.txt-alta-calidad{
+    margin-top: 2rem;
+}
+.txt-entregas{
+    margin-top: 2.5rem;
+}
+
 @media (max-width:400px){
     .ver{
         margin-top: 280px;
@@ -962,6 +1000,7 @@ html, body {
     .menu-footer{
         margin-left: 0!important;
         margin-top: 3rem;
+        color: #6A6A6A;
     }
     .info-footer{
         margin-top: 3rem;
@@ -1007,5 +1046,5 @@ html, body {
     }
     .like-wish{
         left: 260px;
-      }
+    }
 }
