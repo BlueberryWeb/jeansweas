@@ -65,6 +65,68 @@ $(document).ready(function () {
     });
     
     });
+
+//ZIPPER
+const flightPath = {
+    curviness: -0.5,
+    autoRotate: false,
+    values: [
+        {
+            x: (window.innerHeight/102), y: 90
+        },
+        {
+            x: (window.innerHeight/200), y: 200
+        },
+        {
+            x: (window.innerHeight/200), y: 350
+        },
+        {
+            x: (window.innerHeight/200), y: 450
+        },
+        {
+            x: (window.innerHeight/200), y: 550
+        },
+        {
+            x: (window.innerHeight/200), y: 650
+        },
+        {
+            x: (window.innerHeight/200), y: 750
+        },
+        {
+            x: (window.innerHeight/200), y: 850
+        },
+        {
+            x: (window.innerHeight/200), y: 2450
+        },
+
+    ]
+    }
+
+    const tween = new TimelineLite()
+
+    tween.add(
+    TweenLite.to('.paper-plane' , 3, {
+        bezier: flightPath,
+        ease: Power1.easeInOut
+    })
+    )
+
+    const controller = new ScrollMagic.Controller()
+    const scene = new ScrollMagic.Scene({
+    triggerElement: '.animation',
+    duration: 1500,
+    triggerHook: 0
+    })
+
+    .setTween(tween)
+    .setPin('.animation')
+    .addTo(controller)
+
+
+//TERMINA ZIPPER
+function myhref(web) {
+    window.location.href = web;
+}
 /*ANIMACIONES */
 $(document).ready(function() {
     ScrollToInit();
