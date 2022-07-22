@@ -323,11 +323,16 @@ html, body {
     width: 250px;
 }
 .btn-mis-pedidos{
-    background-color: #EEEEEE!important;
     border-radius: 0!important;
     border-color: #EEEEEE!important;
     color: #000000!important;
+    border: 2px solid #EDEDED!important;
+    margin-right: 2rem;
     
+}
+.btn-mis-pedidos.active{
+    background-color: #EEEEEE!important;
+
 }
 /*TERMINA BOTONES*/
 .inner-addon {
@@ -644,6 +649,9 @@ html, body {
 .bg-micuenta{
     margin-top: 120px;
     background-color: #548BC3;
+}
+.bg-{
+    background-color: #F4F4F4;
 }
 /*TERMINAN LOS BACKGROUNDS*/
 .icono-define{
@@ -1085,12 +1093,23 @@ html, body {
     border-right: 1px solid #999999;
 }
 .thead-tabla{
-    border-bottom: 1.5px solid #AAAAAA;
-    border-right: none;
+    border-bottom: 1.5px solid #EAEAEA;
+    border-right: 0;
     background-color: #F4F4F4;
 }
 .articulo-micuenta{
     width: 100px;
+}
+.tabla-detalle-pedido{
+    border-left: 1.5px solid #EAEAEA;
+    border-bottom: 1.5px solid #EAEAEA;
+    border-right: 1.5px solid #EAEAEA;
+}
+.color-producto{
+    width: 20px;
+}
+.bordes-pedido{
+    border: 1.5px solid #EAEAEA;
 }
 @media (max-width:400px){
     .ver{
