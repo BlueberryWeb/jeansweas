@@ -520,7 +520,66 @@
             </div>
         </div>
     </div>-->
-    
+    <style>
+        .scrollmenu{
+            margin-top: 130px;
+        }
+        .div.scrollmenu {
+          background-color: #333;
+          overflow: auto;
+          white-space: nowrap;
+          width: 300px;
+
+        }
+        .div.scrollmenu a {
+          display: inline-block;
+          color: white;
+          text-align: center;
+          padding: 14px;
+          text-decoration: none;
+        }
+        .div.scrollmenu a:hover {
+          background-color: #777;
+        }
+        .bt-menu{
+            margin-top: -30px;
+            max-width: 20px;
+            float: right;
+            position: relative;
+        }
+        .fa-bars{
+            color: #5398E6;
+        }
+        .mujer{
+            width: 300px;
+        }
+        .onboarding-card {
+            position: absolute;
+            user-select: none;
+            visibility: hidden;
+            width: 300px;
+            background-color: #fff;
+        }
+        .visible-card {
+            opacity: 1;
+            visibility: visible;
+            animation-duration: 1s;
+            animation-name: animTexto;
+        }
+        @keyframes animTexto {
+            from {
+            margin-left: 100%;
+            width: 100%;
+            }
+            to {
+            margin-left: 0%;
+            width: 100%;
+            }
+        }
+        .bg-menu-phone{
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
 
 <!--MENU DE HASTA ARRIBA-->
     <header class="fixed-top menu-phone d-block d-sm-block d-md-none">
@@ -552,53 +611,8 @@
             </div>
         </div>
     </header>
-    <style>
-        .scrollmenu{
-            margin-top: 130px;
-        }
-        .div.scrollmenu {
-          background-color: #333;
-          overflow: auto;
-          white-space: nowrap;
-          width: 300px;
-
-        }
-        .div.scrollmenu a {
-          display: inline-block;
-          color: white;
-          text-align: center;
-          padding: 14px;
-          text-decoration: none;
-        }
-        
-        .div.scrollmenu a:hover {
-          background-color: #777;
-        }
-        .bt-menu{
-            margin-top: -30px;
-            max-width: 20px;
-            float: right;
-            position: relative;
-        }
-        .fa-bars{
-            color: #5398E6;
-        }
-        .mujer{
-            width: 300px;
-        }
-        .visible-card{
-            opacity: 1;
-            visibility: visible;
-            animation-duration: 2s;
-            animation-name: animTexto;
-        }
-        .onboarding-card {
-            position: fixed;
-            user-select: none;
-            visibility: hidden;
-        }
-        </style>
-    <div class="container d-block d-sm-block d-md-none p-0 ">
+    
+    <div class="d-block d-sm-block d-md-none p-0 bg-menu-phone">
         <div class="scrollmenu div">
             <a href="#home"> TODO</a>
             <a href="#news">MUJER</a>
@@ -610,338 +624,125 @@
             <a href="#base">CONTACTO</a>
         </div>
          <!--MENU-->
-    <div class="container d-block d-sm-block d-md-none onboarding-card" id="card_menu">
-        <div class="row d-flex justify-content-center pt-3 border-bottom pt-5">
-                <h6 class="text-center pt-5 pb-5">VER DIAGNÓSTICOS PARA:</h6>
-            </div>
-        <div class="row pt-3 border-bottom pb-3">
-            <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                <h3 class="ms-4 pt-2 h5">RETINA Y VÍTREO</h3>
-                <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-            </div> 
-        </div>
-        <div class="row pt-3 border-bottom pb-3">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">GLUCOMA Y NERVIO ÓPTICO</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-        <div class="row pt-3 border-bottom pb-3">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">CÓRNEA</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-        <div class="row pt-2 border-bottom pb-2">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">ECOGRAFÍA Y CÁLCULO <br> DE LENTE INTRAOCULAR</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-        <div class="row pt-2 border-bottom pb-2">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">PAQUETES DE CÁLCULO PARA <br> LENTES PREMIUM</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-        <div class="row pt-3 border-bottom pb-3">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">VALORACIÓN DE OJO SECO</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-        <div class="row pt-3 border-bottom pb-3">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">EQUIPOS</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-        <div class="row pt-3 border-bottom pb-3">
-            <div class="">
-                <h3 class="ms-4 pt-2 h5">CONTACTANOS</h3>
-                <img src="img/boton-nav-der.png" alt="OFTALIA" class="img-fluid bt-menu me-3"/>
-            </div> 
-        </div>
-    </div>
-   
-    <!--  FONDO RETINA CON TÍTULO DE LA SECCIÓN -->
-    <div class="container d-block d-sm-block d-md-none  onboarding-card" id="card_retina_vitreo">
-         <!--BOTONES DE LOS LADOS-->
-    <a href="#" class="btn-flotante-der onboarding-card__arrow" data-target="#card_menu"><img src="img/boton-nav-der.png" alt=""></a>
-    <a href="#" class="btn-flotante-iz onboarding-card__arrow" data-target="#card_menu"><img src="img/boton-nav-izq.png" alt=""></a>
-        <div class="row fondo-retina categoria ">
-            <div class="col-6 col-sm-6">
-            </div>
-            <div class="col-6 col-sm-6 pt-1">
-                <h6>DIAGNÓSTICO PARA</h6>
-                <h5 class="h6">RETINA Y VITREO</h5>
-            </div>
-        </div>
-        <!-- 1.- OCT DE MACULA DE ALTA DEFINICIÓN -->
-        <div class="row pt-5 ms-3 no1">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">1</h1>
-            </div>
-            <div class="col-10 col-sm-6 naranja">
-                <h2 class="text-start">OCT DE MACULA DE <br> ALTA DEFINICIÓN</h2>
-            </div>
-        </div>
-       
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 2.- ANGIO-OCT DE MACULA -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">2</h1>
-            </div>
-            <div class="col-10 col-sm-6 naranja">
-                <h2 class="text-start">ANGIO-OCT <br> DE MACULA</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center ms-3">
-            <h6>Muestra las capas vasculares de la retina sin necedidad de medio de contraste.</h6>
-        </div>
-        
-        <div class="row d-flex justify-content-center pt-5" >
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 3.- ANGIOPLEX DE RETINA -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">3</h1>
-            </div>
-            <div class="col-10 col-sm-6 naranja">
-                <h2 class="text-start">ANGIOPLEX <br> DE RETINA</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center ms-3">
-            <h6>Más rápido, más amplio y con un nuevo nivel máximo de detalle, apoyado con el sistema angioplex.</h6>
-        </div>
-        
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 4.- ANGIOGRAMA CON FLUORESCEÍNA -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">4</h1>
-            </div>
-            <div class="col-10 col-sm-6 naranja">
-                <h2 class="text-start">ANGIIOGRAMA <br> CON FLUORESCEÍNA</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center ms-3">
-            <h6 class="text-compl">DE RETINOPATÍA DIABÉTICA
-                NO PROLIFERATIVA</h6>
-        </div>
-       
-        <div class="row d-flex justify-content-center ms-3 pt-5">
-            <h6>Ilustran las dilataciones localizadas de los capilares retinianos (microaneurismas) y áreas de no perfusión periférica.</h6>
-        </div>
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 5.- FOTOGRAFÍA DE CAMPO AMPLIO -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">5</h1>
-            </div>
-            <div class="col-7 col-sm-6 naranja">
-                <h2 class="text-start">FOTOGRAFÍA DE <br> CAMPO AMPLIO</h2>
-            </div>
-            <div class="col-3 col-sm-6 nuevo">
-                <h2 class="text-start h5 pt-2 me-3">NUEVO</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center ms-3">
-            <h6 class="text-compl">(170 GRADOS)</h6>
-        </div>
-       
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 6.- FOTOGRAFÍA DE CAMPO ULTRA-AMPLIO -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">6</h1>
-            </div>
-            <div class="col-7 col-sm-6 naranja">
-                <h2 class="text-start">FOTOGRAFÍA <br>DE CAMPO <br> ULTRA-AMPLIO</h2>
-            </div>
-            <div class="col-3 col-sm-6 nuevo">
-                <h2 class="text-start h5 pt-2 me-3">NUEVO</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center ms-3">
-            <h6 class="text-compl">(220 GRADOS)</h6>
-        </div>
-       
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 7.- FOTOGRAFÍA CON AUTOFLUORESCENCIA DE CAMPO AMPLIO -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">7</h1>
-            </div>
-            <div class="col-10 col-sm-6 naranja">
-                <h2 class="text-start">FOTOGRAFÍA CON <br> AUTOFLUORESCENCIA <br> DE CAMPO AMPLIO</h2>
-            </div>
-        </div>
-        <div class="row d-flex justify-content-center ms-3">
-            <h6 class="text-compl">CON FLUORESCEÍNA DE RETINOPATÍA DIABÉTICA NO PROLIFERATIVA.</h6>
-        </div>
-        
-        <div class="row d-flex justify-content-center ms-3 pt-5">
-            <h6>Presenta hasta el mínimo detalle en la zona avascular foveal y ofrece una representación de los microaneurismas desde la fóvea hasta la periferia.</h6>
-        </div>
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-        <!-- 8.- ANÁLISIS DE SEGUIMIENTO DE OCT MACULAR FORUM -->
-        <div class="row pt-5 ms-3">
-            <div class="col-1 col-sm-6 me-2">
-                <h1 class="display-1">8</h1>
-            </div>
-            <div class="col-10 col-sm-6 naranja">
-                <h2 class="text-start">ANÁLISIS DE <br> SEGUIMIENTO DE OCT <br> MACULAR FORUM</h2>
-            </div>
-        </div>
-        
-        <div class="row d-flex justify-content-center pt-5">
-            <div class="col-5 col-sm-3 text-center">
-                <h6>Equipo utilizado:</h6>
-                <h5 class="naranja">CLARUS 700</h5>
-            </div>
-        </div>
-    </div>
-        <div class="mujer onboarding-card visible-card" id="mujer">
-            <div class="row pt-3 border-bottom pb-3">
+        <div class="container d-block d-sm-block d-md-none visible-card onboarding-card " id="card_menu">
+            <div class="row pt-2 pb-2">
                 <div class="onboarding-card__arrow" data-target="#pantalones">
-                    <h3 class="ms-4 pt-2 h6">PANTALONES</h3>
+                    <h3 class="ms-4 pt-2 h6 Medium">PANTALONES</h3>
                     <i class="fa-solid fa-angle-right bt-menu me-3"></i>
                 </div> 
             </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="">
-                    <h3 class="ms-4 pt-2 h6">FALDA</h3>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#falda">
+                    <h3 class="ms-4 pt-2 h6 Medium">FALDA</h3>
                     <i class="fa-solid fa-angle-right bt-menu me-3"></i>
                 </div> 
             </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="">
-                    <h3 class="ms-4 pt-2 h6">PLAYERA</h3>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#playera">
+                    <h3 class="ms-4 pt-2 h6 Medium">PLAYERA</h3>
                     <i class="fa-solid fa-angle-right bt-menu me-3"></i>
                 </div> 
             </div>
-            <div class="row pt-2 border-bottom pb-2">
-                <div class="">
-                    <h3 class="ms-4 pt-2 h6">BLUSA</h3>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#blusa">
+                    <h3 class="ms-4 pt-2 h6 Medium">BLUSA</h3>
                     <i class="fa-solid fa-angle-right bt-menu me-3"></i>
                 </div> 
             </div>
-            <div class="row pt-2 border-bottom pb-2">
-                <div class="">
-                    <h3 class="ms-4 pt-2 h6">SHORT</h3>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#short">
+                    <h3 class="ms-4 pt-2 h6 Medium">SHORT</h3>
                     <i class="fa-solid fa-angle-right bt-menu me-3"></i>
                 </div> 
             </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="">
-                    <h3 class="ms-4 pt-2 h6">CHAMARRA</h3>
+            <div class="row pt-3 pb-2">
+                <div class="onboarding-card__arrow" data-target="#chamarra">
+                    <h3 class="ms-4 pt-2 h6 Medium">CHAMARRA</h3>
+                        <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+        </div>
+        <!--  SUBMENU DE LOS PANTALONES -->
+        <div class="container d-block d-sm-block d-md-none  onboarding-card" id="pantalones">
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_menu">
+                    <h3 class="ms-4 pt-2 h6 bold">PANTALONES</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2  pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">SKINNY</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">MOM JEANS</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">PUMP-UP</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">WIDE LEG</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">JOGGER</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">CULOTTE</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">CARGO</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">STRAIGHT</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">SLOUCHY</h3>
+                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
+                </div> 
+            </div>
+            <div class="row pt-2 pb-2">
+                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
+                    <h3 class="ms-4 pt-2 h6 Medium">CAPRI</h3>
                     <i class="fa-solid fa-angle-right bt-menu me-3"></i>
                 </div> 
             </div>
         </div>
-        <div class="cate-pantalon onboarding-card" id="pantalones">
-            <div class="onboarding-card__arrow" data-target="#nav-mujer">
-                <h3 class="ms-4 pt-2 h6">PANTALONES</h3>
-                <i class="fa-solid fa-angle-left bt-menu me-3"></i>
-            </div> 
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow">
-                    <h3 class="ms-4 pt-2 h6">SKINNY</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">MOM JEANS</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">PUMP-UP</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">WIDE LEG</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">JOGGER</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">CULOTTE</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">CARGO</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">STRAIGHT</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">SLOUCHY</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-            <div class="row pt-3 border-bottom pb-3">
-                <div class="onboarding-card__arrow" data-target="#card_retina_vitreo">
-                    <h3 class="ms-4 pt-2 h6">CAPRI</h3>
-                    <i class="fa-solid fa-angle-right bt-menu me-3"></i>
-                </div> 
-            </div>
-        </div>
+        
+       
     </div>
+    <script>
+        document.querySelectorAll('.onboarding-card__arrow').forEach(function (arrow) {
+          var target = document.querySelector(arrow.dataset.target);
+          arrow.addEventListener('click', function (e) {
+          document.querySelector('.visible-card').classList.remove('visible-card');
+          target.classList.add('visible-card');
+          }, false);
+      });
+  </script>
     <!--
   <a href="#" class="btn-flotante-whats"><i class="fa-brands fa-whatsapp"></i></a>
   <div class="row">
@@ -1184,10 +985,10 @@
   
 
 
-    <!-- Button trigger modal -->
+    <!-- Button trigger modal 
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#guia-tallas">
     Launch demo modal
-  </button>
+  </button>-->
   
   <!-- Modal -->
   <div class="modal fade" id="guia-tallas" tabindex="-1" aria-labelledby="guia-tallasLabel" aria-hidden="true">
@@ -1317,15 +1118,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js'></script>   
     <script src='https://cdnjs.cloudflare.com/ajax/libs/elevatezoom/3.0.8/jquery.elevatezoom.min.js'></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-          document.querySelectorAll('.onboarding-card__arrow').forEach(function (arrow) {
-            var target = document.querySelector(arrow.dataset.target);
-            arrow.addEventListener('click', function (e) {
-            document.querySelector('.visible-card').classList.remove('visible-card');
-            target.classList.add('visible-card');
-            }, false);
-        });
-    </script>
+   <!--
     <script>
         const btnToggle = document.querySelector('.button_container');
 
@@ -1386,6 +1179,6 @@ $('.side-picture').click(function () {
 
 });
 
-    </script>
+    </script>-->
 </body>
 </html>
